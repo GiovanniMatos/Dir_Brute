@@ -19,17 +19,13 @@ if (r == 200):
 
 print("="*15, "Diretorios","="*15)
 print()
+time.sleep(2)
 
 def main():
     website = url
     wordlist = open(".\diretorios.txt", "r").readlines()
     wordlist = [x.replace("\n", "") for x in wordlist]
 
-    for word in wordlist:
-        request = requests.get(website + word)
-        if request.status_code != 200:
-            print(f'\033[1;32m[{request.status_code}]\033[0;0m {word} ')
-            os.system("cls || clear")
     for word in wordlist:
         request = requests.get(website + word)
         if request.status_code == 200:
