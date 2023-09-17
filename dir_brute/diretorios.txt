@@ -75,3 +75,7 @@
 /negocios.php?id=1
 /p.php?id=1
 /produtos.php?id=1
+/register
+/mapa
+/map
+/add_data
